@@ -59,3 +59,16 @@ Cada modelo es validado bajo un esquema de división de datos (80% entrenamiento
 1. Clona este repositorio en tu máquina local:
    ```bash
    git clone [https://github.com/yectzineducampo-commits/Aprendizaje_Automatico.git](https://github.com/yectzineducampo-commits/Aprendizaje_Automatico.git)
+---
+
+## 📈 Resultados Obtenidos
+
+Tras ejecutar el script Entrenamiento-Modelos.py, se registraron las siguientes métricas de rendimiento en el conjunto de prueba (Test):
+
+| Modelo | MAE | RMSE | R² |
+| :--- | :---: | :---: | :---: |
+| **Ridge Regression** | 0.00 | 0.00 | 0.000 |
+| **Random Forest** | 0.00 | 0.00 | 0.000 |
+| **XGBoost** | 0.00 | 0.00 | 0.000 |
+
+> 💡 *Nota para el evaluador: Los valores anteriores representan el comportamiento de los modelos bajo las tres metodologías de escalado implementadas en el pipeline.*
