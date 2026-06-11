@@ -22,7 +22,8 @@ El script realiza una preparación rigurosa del dataset antes de ser expuesto a 
 * **Imputación Avanzada:** Tratamiento de valores nulos mediante el algoritmo de **Vecinos Más Cercanos (KNN Imputer)** y estrategias de mediana.
 * **Codificación (Encoding):** Transformación de variables categóricas complejas usando **One-Hot Encoding** (para empresas y equipos) y **Target Encoding** (para aeropuertos de origen).
 * **Escalamiento Robusto:** Aplicación simultánea y controlada de múltiples metodologías de escalado como *StandardScaler*, *MinMaxScaler* y *RobustScaler* para mitigar el impacto de valores atípicos (outliers).
-* **Ingeniería de Características:** * Extracción de componentes cíclicos temporales mediante transformaciones seno y coseno sobre la variable mes (`mes_sin`, `mes_cos`).
+* **Ingeniería de Características:**
+  * Extracción de componentes cíclicos temporales mediante transformaciones seno y coseno sobre la variable mes (`mes_sin`, `mes_cos`).
   * Creación de banderas de contexto histórico (`covid_flag`) para aislar los años de pandemia (2020, 2021).
   * Concatenación de rutas de vuelo (`origen_destino`).
 
@@ -59,16 +60,3 @@ Cada modelo es validado bajo un esquema de división de datos (80% entrenamiento
 1. Clona este repositorio en tu máquina local:
    ```bash
    git clone [https://github.com/yectzineducampo-commits/Aprendizaje_Automatico.git](https://github.com/yectzineducampo-commits/Aprendizaje_Automatico.git)
----
-
-## 📈 Resultados Obtenidos
-
-Tras ejecutar el script Entrenamiento-Modelos.py, se registraron las siguientes métricas de rendimiento en el conjunto de prueba (Test):
-
-| Modelo | MAE | RMSE | R² |
-| :--- | :---: | :---: | :---: |
-| **Ridge Regression** | 0.00 | 0.00 | 0.000 |
-| **Random Forest** | 0.00 | 0.00 | 0.000 |
-| **XGBoost** | 0.00 | 0.00 | 0.000 |
-
-> 💡 *Nota para el evaluador: Los valores anteriores representan el comportamiento de los modelos bajo las tres metodologías de escalado implementadas en el pipeline.*
